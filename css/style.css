@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body { 
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Configurações do Card */
+
+.card {
+    align-self: center;
+    width: 25.6rem;
+    height: 37.3rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#desenho {
+    width: 410px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Configurações dp Conteúdo */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Configurações dos Titulos*/
+
+h1 {
+    margin: 2.5rem 0 .2rem 0;
+    font-size: 28px;
+    font-weight: 900;
+}
+h2 {
+    color: #808080;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    align-content: center;
+    width: 18.3rem;
+}
+
+/* Configuração da Caixa de Preço*/
+
+.price_plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.3rem;
+    margin-bottom: .7rem;
+    width: 18rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.price_plan a {
+    text-decoration: none;
+}
+.annual {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.price  {
+    color: #808080;
+}
+
+/* Configurações dos Botões*/
+
+.payment {
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    width: 21rem;
+    padding: .6rem;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.3);
+}
+.payment:hover {
+    background-color: #766cf1;
+}
+.cancel {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.cancel:hover {
+    color: #000;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    /* Configurações do Card*/
+
+    .card {
+        width: 20.6rem;
+        height: 35.3rem;
+    }
+    #desenho {
+        width: 330px;
+        height: 161px;
+    }
+
+    /* Configurações dos Titulos*/
+
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 15px;
+        width: 16rem;
+    }
+
+    /* Configuração da caixa de Preço */
+
+    .price_plan {
+        width: 15rem;
+    }
+    .price_plan a {
+        font-size: 14px;
+    }
+    .annual {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    /* Configuração dos Botões*/
+
+    .payment {
+        width: 18rem;
+        padding: .9rem;
+        font-size: 15px;
+    } 
+    .cancel {
+        margin-top: .5rem;
+    }
+}
